@@ -45,8 +45,9 @@ def main():
         kwargs = dict(model=args.model,
                       messages=[{"role": "user", "content": prompt}],
                       format=schema,
-                      options={"temperature": 0.0, "seed": 42, "num_ctx": 2048,
-                               "num_predict": 256},
+                      options={"temperature": 0.0, "seed": 42, ""
+                      "": 2048,
+                               "num_predict": 1536},
                       stream=False)
         if args.think_mode == "off":
             kwargs["think"] = False
@@ -96,7 +97,7 @@ def main():
     summary = {
         "model": args.model, "dataset": "development.jsonl (English only)",
         "n": len(records), "temperature": 0.0, "seed": 42,
-        "num_ctx": 2048, "num_predict": 256, "think_mode": args.think_mode,
+        "num_ctx": 2048, "num_predict": 1536, "think_mode": args.think_mode,
         "evaluation": "exact-span typed micro F1; ungrounded strings count as FP",
         "precision": p, "recall": r, "micro_f1": f1,
         "schema_valid_rate": sum(x["schema_valid"] for x in records) / len(records),
