@@ -1,0 +1,17 @@
+{
+  "model": "gemma3:4b",
+  "dataset": "development.jsonl (English only)",
+  "n": 5,
+  "temperature": 0.0,
+  "seed": 42,
+  "num_ctx": 2048,
+  "num_predict": 1536,
+  "think_mode": "default",
+  "evaluation": "exact-span typed micro F1; ungrounded strings count as FP",
+  "precision": 0.6521739130434783,
+  "recall": 1.0,
+  "micro_f1": 0.7894736842105263,
+  "schema_valid_rate": 1.0,
+  "unsupported_total": 1,
+  "average_latency_sec": 5.1016
+}

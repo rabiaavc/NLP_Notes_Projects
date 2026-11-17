@@ -1,0 +1,70 @@
+{
+  "experiment": "language",
+  "generated_at_utc": "2026-11-16T14:52:03.380112+00:00",
+  "model": "qwen3:4b-instruct",
+  "seed": 42,
+  "requested_limit": 0,
+  "notes": "Prototype results on a synthetic dataset. All scores require manual gold review. TR is supplementary; language differences confound NER checkpoint differences. Repeated temperature trials are not independent test examples.",
+  "conditions": {
+    "llm__prompt_en_text_en": {
+      "samples": 10,
+      "precision": 0.7297297297297297,
+      "recall": 0.6923076923076923,
+      "f1": 0.7105263157894737,
+      "tp": 27,
+      "fp": 10,
+      "fn": 12,
+      "raw_json_validity": 1.0,
+      "clean_json_validity": 1.0,
+      "schema_validity": 1.0,
+      "avg_latency_sec": 3.596054,
+      "median_latency_sec": 3.4483249999999996,
+      "ungrounded_total": 4
+    },
+    "llm__prompt_en_text_tr": {
+      "samples": 10,
+      "precision": 0.8125,
+      "recall": 0.6842105263157895,
+      "f1": 0.742857142857143,
+      "tp": 26,
+      "fp": 6,
+      "fn": 12,
+      "raw_json_validity": 1.0,
+      "clean_json_validity": 1.0,
+      "schema_validity": 1.0,
+      "avg_latency_sec": 3.6119250000000003,
+      "median_latency_sec": 3.67797,
+      "ungrounded_total": 0
+    },
+    "llm__prompt_tr_text_en": {
+      "samples": 10,
+      "precision": 0.7941176470588235,
+      "recall": 0.6923076923076923,
+      "f1": 0.7397260273972601,
+      "tp": 27,
+      "fp": 7,
+      "fn": 12,
+      "raw_json_validity": 1.0,
+      "clean_json_validity": 1.0,
+      "schema_validity": 1.0,
+      "avg_latency_sec": 3.4441319999999997,
+      "median_latency_sec": 3.4040549999999996,
+      "ungrounded_total": 0
+    },
+    "llm__prompt_tr_text_tr": {
+      "samples": 10,
+      "precision": 0.7714285714285715,
+      "recall": 0.7105263157894737,
+      "f1": 0.7397260273972601,
+      "tp": 27,
+      "fp": 8,
+      "fn": 11,
+      "raw_json_validity": 1.0,
+      "clean_json_validity": 1.0,
+      "schema_validity": 1.0,
+      "avg_latency_sec": 3.896862,
+      "median_latency_sec": 3.58446,
+      "ungrounded_total": 0
+    }
+  }
+}

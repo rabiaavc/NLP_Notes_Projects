@@ -1,0 +1,17 @@
+{
+  "model": "qwen3:4b-instruct",
+  "dataset": "development.jsonl (English only)",
+  "n": 5,
+  "temperature": 0.0,
+  "seed": 42,
+  "num_ctx": 2048,
+  "num_predict": 1536,
+  "think_mode": "default",
+  "evaluation": "exact-span typed micro F1; ungrounded strings count as FP",
+  "precision": 0.7368421052631579,
+  "recall": 0.9333333333333333,
+  "micro_f1": 0.8235294117647058,
+  "schema_valid_rate": 1.0,
+  "unsupported_total": 1,
+  "average_latency_sec": 3.8366
+}

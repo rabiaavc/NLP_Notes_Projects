@@ -1,0 +1,21 @@
+{
+  "samples": 50,
+  "precision": 0.9617486338797814,
+  "recall": 0.9777777777777777,
+  "f1": 0.9696969696969697,
+  "tp": 176,
+  "fp": 7,
+  "fn": 4,
+  "raw_json_validity": null,
+  "clean_json_validity": null,
+  "schema_validity": null,
+  "avg_latency_sec": 0.030568809140240773,
+  "median_latency_sec": 0.0264426870016905,
+  "ungrounded_total": 0,
+  "model": "dslim/bert-base-NER",
+  "device": "mps",
+  "aggregation_strategy": "first",
+  "dataset": "english_test.jsonl",
+  "evaluation": "Exact-span typed micro-F1",
+  "torch_version": "2.15.0"
+}

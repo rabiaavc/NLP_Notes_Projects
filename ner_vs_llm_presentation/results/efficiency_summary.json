@@ -1,0 +1,40 @@
+{
+  "experiment": "efficiency",
+  "generated_at_utc": "2026-11-14T19:04:36.386375+00:00",
+  "model": "qwen3:4b-instruct",
+  "seed": 42,
+  "requested_limit": 0,
+  "notes": "Prototype results on a synthetic dataset. All scores require manual gold review. TR is supplementary; language differences confound NER checkpoint differences. Repeated temperature trials are not independent test examples.",
+  "conditions": {
+    "llm__warm_repeat_1": {
+      "samples": 50,
+      "precision": 0.7241379310344828,
+      "recall": 0.8166666666666667,
+      "f1": 0.7676240208877284,
+      "tp": 147,
+      "fp": 56,
+      "fn": 33,
+      "raw_json_validity": 1.0,
+      "clean_json_validity": 1.0,
+      "schema_validity": 1.0,
+      "avg_latency_sec": 3.7562786,
+      "median_latency_sec": 3.641655,
+      "ungrounded_total": 15
+    },
+    "spacy__warm_repeat_1": {
+      "samples": 50,
+      "precision": 0.8793103448275862,
+      "recall": 0.85,
+      "f1": 0.864406779661017,
+      "tp": 153,
+      "fp": 21,
+      "fn": 27,
+      "raw_json_validity": null,
+      "clean_json_validity": null,
+      "schema_validity": null,
+      "avg_latency_sec": 0.0197836,
+      "median_latency_sec": 0.018305000000000002,
+      "ungrounded_total": 0
+    }
+  }
+}

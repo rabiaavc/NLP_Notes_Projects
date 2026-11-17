@@ -1,0 +1,42 @@
+{
+  "cpu": {
+    "samples": 50,
+    "precision": 0.8549222797927462,
+    "recall": 0.9166666666666666,
+    "f1": 0.8847184986595175,
+    "tp": 165,
+    "fp": 28,
+    "fn": 15,
+    "raw_json_validity": null,
+    "clean_json_validity": null,
+    "schema_validity": null,
+    "avg_latency_sec": 0.04844360417991993,
+    "median_latency_sec": 0.04786985400096455,
+    "ungrounded_total": 0,
+    "model": "dslim/bert-base-NER",
+    "device": "cpu",
+    "dataset": "english_test.jsonl",
+    "evaluation": "exact-span typed micro F1",
+    "torch_version": "2.15.0"
+  },
+  "mps": {
+    "samples": 50,
+    "precision": 0.8549222797927462,
+    "recall": 0.9166666666666666,
+    "f1": 0.8847184986595175,
+    "tp": 165,
+    "fp": 28,
+    "fn": 15,
+    "raw_json_validity": null,
+    "clean_json_validity": null,
+    "schema_validity": null,
+    "avg_latency_sec": 0.02518898998001532,
+    "median_latency_sec": 0.024546541999370675,
+    "ungrounded_total": 0,
+    "model": "dslim/bert-base-NER",
+    "device": "mps",
+    "dataset": "english_test.jsonl",
+    "evaluation": "exact-span typed micro F1",
+    "torch_version": "2.15.0"
+  }
+}
