@@ -1,4 +1,6 @@
 """Strict entity-level metrics and deterministic LLM text-to-span alignment."""
+# Precision, Recall F1 ve hata hesaplamaları için mikro düzeyde kesin varlık seviyesinde metrikler 
+# ve deterministik LLM metin-çerçeve hizalaması sağlar.
 import re
 from collections import Counter
 

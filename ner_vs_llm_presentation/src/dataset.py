@@ -1,4 +1,6 @@
 """Dataset loading and auditable span validations (stdlib only)."""
+# verileri okur , etiket ve karakter konumlarını belirler ve doğrular.
+
 import json
 from pathlib import Path
 
